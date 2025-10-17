@@ -1,18 +1,8 @@
-"use client";
 import React from "react";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const HomePage: React.FC = () => {
-  const router = useRouter();
-
-  const goToGroup = () => {
-    router.push("/group"); 
-  };
-
-    const goToRegister = () => {
-    router.push("/register");
-  };
-
   return (
     <div className="min-h-screen bg-gray-100">
       <header className="bg-blue-600 text-white p-4 shadow">
@@ -27,21 +17,21 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {/* Product Cards */}
             <div className="bg-white p-4 rounded shadow">
-              <button
-                onClick={goToGroup}
-                className="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
+              <Link
+              href="/group"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
               >
-                Groups
-              </button>
+              Groups
+              </Link>
             </div>
 
             <div className="bg-white p-4 rounded shadow">
-              <button
-                onClick={goToRegister}
-                className="mt-2 bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition"
+              <Link
+              href="/register"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
               >
-                Register
-              </button>
+              Register
+              </Link>
             </div>
 
             <div className="bg-white p-4 rounded shadow">Product 3</div>
