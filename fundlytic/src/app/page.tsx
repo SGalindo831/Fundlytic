@@ -34,7 +34,15 @@ const HomePage: React.FC = () => {
               </Link>
             </div>
 
-            <div className="bg-white p-4 rounded shadow">Product 3</div>
+            <div className="bg-white p-4 rounded shadow">
+              <Link
+              href="/inventory"
+              className="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+              >
+              Inventory
+              </Link>
+            </div>
+            
           </div>
         </section>
 
