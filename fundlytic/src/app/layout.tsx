@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X, Home, Users, UserPlus, UserRound, UsersRound, CreditCard, Grid } from "lucide-react";
+import { Menu, X, Home, UsersRound, CreditCard, Grid } from "lucide-react";
 import "./globals.css";
 
 export default function RootLayout({ 
